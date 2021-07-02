@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace JL_EJERCICIO5
+namespace JL_EJERCICIO5//Josselin Carolina Lopez Diaz 20181008622
 {
     public partial class Form1 : Form
     {
@@ -57,23 +57,7 @@ namespace JL_EJERCICIO5
 
             }
 
-            //for (int n = 0; n < fila; n++)
-
-            //{
-
-
-            //    for (int m = 0; m < column; m++)
-            //    {
-
-
-
-
-            //        MessageBox.Show("p" + textBox1.Text + "," + textBox2.Text + "=");
-
-
-            //    }
-
-            //}
+          
 
 
 
@@ -87,7 +71,20 @@ namespace JL_EJERCICIO5
 
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            
+        }
+        private void limpiar()
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            listBox1.Items.Clear();
+            listBox1.Focus();
+        }
+
+
     }
 }
 
